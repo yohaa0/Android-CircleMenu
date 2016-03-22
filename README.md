@@ -1,10 +1,10 @@
 # CircleMenu
-×Ô¶¨ÒåViewGroupÊµÏÖµÄÔ²ĞÎĞı×ª²Ëµ¥£¬Ö§³Ö¸úËæÊÖÖ¸Ğı×ªÒÔ¼°¿ìËÙĞı×ª¡£
-Í¼±êÇëÎğÉÌÓÃ¡£
+è‡ªå®šä¹‰ViewGroupå®ç°çš„åœ†å½¢æ—‹è½¬èœå•ï¼Œæ”¯æŒè·Ÿéšæ‰‹æŒ‡æ—‹è½¬ä»¥åŠå¿«é€Ÿæ—‹è½¬ã€‚
+å›¾æ ‡è¯·å‹¿å•†ç”¨ã€‚
 
-ÓÃ·¨
+ç”¨æ³•
 =====
-1¡¢²¼¾ÖÎÄ¼şÖĞÉùÃ÷¿Ø¼ş
+1ã€å¸ƒå±€æ–‡ä»¶ä¸­å£°æ˜æ§ä»¶
 
 	<com.zhy.view.CircleMenuLayout
 		android:id="@+id/id_menulayout"
@@ -14,14 +14,14 @@
 		android:background="@drawable/circle_bg3" >
 	</com.zhy.view.CircleMenuLayout>
 
-2¡¢ActivityµÄonCreateÖĞ|FragmentµÄonCreateViewÖĞ
+2ã€Activityçš„onCreateä¸­|Fragmentçš„onCreateViewä¸­
 
 	public class CircleActivity extends Activity
 	{
 		private CircleMenuLayout mCircleMenuLayout;
 
-		private String[] mItemTexts = new String[] { "°²È«ÖĞĞÄ ", "ÌØÉ«·şÎñ", "Í¶×ÊÀí²Æ",
-				"×ªÕË»ã¿î", "ÎÒµÄÕË»§", "ĞÅÓÃ¿¨" };
+		private String[] mItemTexts = new String[] { "å®‰å…¨ä¸­å¿ƒ ", "ç‰¹è‰²æœåŠ¡", "æŠ•èµ„ç†è´¢",
+				"è½¬è´¦æ±‡æ¬¾", "æˆ‘çš„è´¦æˆ·", "ä¿¡ç”¨å¡" };
 		private int[] mItemImgs = new int[] { R.drawable.home_mbank_1_normal,
 				R.drawable.home_mbank_2_normal, R.drawable.home_mbank_3_normal,
 				R.drawable.home_mbank_4_normal, R.drawable.home_mbank_5_normal,
@@ -32,7 +32,7 @@
 		{
 			super.onCreate(savedInstanceState);
 			
-			//×ÔÒÑÇĞ»»²¼¾ÖÎÄ¼ş¿´Ğ§¹û
+			//è‡ªå·²åˆ‡æ¢å¸ƒå±€æ–‡ä»¶çœ‹æ•ˆæœ
 			setContentView(R.layout.activity_main02);
 
 			mCircleMenuLayout = (CircleMenuLayout) findViewById(R.id.id_menulayout);
@@ -41,7 +41,7 @@
 
 	}
 
-3¡¢Ìí¼Óµã»÷ÊÂ¼ş
+3ã€æ·»åŠ ç‚¹å‡»äº‹ä»¶
 
 	mCircleMenuLayout.setOnMenuItemClickListener(new OnMenuItemClickListener()
 	{
@@ -61,24 +61,24 @@
 		}
 	});
 
-Ğ§¹ûÍ¼
+æ•ˆæœå›¾
 =====
 
 CircleMenuSample
 
 ![Sample Screenshots][1]
 
-CCBSample ×¢£ºÇ§Íò±ğÎÊÎÒÎªÊ²Ã´ÉÙÒ»¿é£¬½¨ĞĞ¾ÍÊÇÕâÑùµÄ¡£
+CCBSample æ³¨ï¼šåƒä¸‡åˆ«é—®æˆ‘ä¸ºä»€ä¹ˆå°‘ä¸€å—ï¼Œå»ºè¡Œå°±æ˜¯è¿™æ ·çš„ã€‚
 
 ![Sample Screenshots][2]
 
 
-¹ØÓÚÎÒ
+å…³äºæˆ‘
 =====
 
-[ÎÒµÄ²©¿ÍµØÖ·][3]
+æˆ‘çš„åšå®¢åœ°å€3
 
 
-[1]: https://github.com/hongyangAndroid/CircleMenu/blob/master/sample_zhy_CircleMenu/screen_shot.gif
-[2]: https://github.com/hongyangAndroid/CircleMenu/blob/master/sample_zhy_CircleMenu/ccb.gif
-[3]: http://blog.csdn.net/lmj623565791
+1]: https://github.com/hongyangAndroid/CircleMenu/blob/master/sample_zhy_CircleMenu/screen_shot.gif
+2]: https://github.com/hongyangAndroid/CircleMenu/blob/master/sample_zhy_CircleMenu/ccb.gif
+3]: http://blog.csdn.net/lmj623565791
