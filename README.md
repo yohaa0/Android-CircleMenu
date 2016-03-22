@@ -77,6 +77,7 @@ CCBSample 注：千万别问我为什么少一块，建行就是这样的。
 =====
 
 我的博客地址[3]
+
 ========================================
 1、概述
 
@@ -120,7 +121,7 @@ public class MainActivity extends Activity
 {
 
 	private CircleMenuLayout mCircleMenuLayout;
-
+	
 	private String[] mItemTexts = new String[] { "安全中心 ", "特色服务", "投资理财",
 			"转账汇款", "我的账户", "信用卡" };
 	private int[] mItemImgs = new int[] { R.drawable.home_mbank_1_normal,
@@ -163,73 +164,18 @@ public class MainActivity extends Activity
 	}
 
 }
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
+
+
 package com.zhy.ccbCricleMenu;
- 
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
- 
+
 import com.zhy.view.CircleMenuLayout;
 import com.zhy.view.CircleMenuLayout.OnMenuItemClickListener;
- 
+
 public class MainActivity extends Activity
 {
  
@@ -277,6 +223,8 @@ public class MainActivity extends Activity
 	}
  
 }
+
+
 2、布局文件
 
 
@@ -315,41 +263,7 @@ public class MainActivity extends Activity
     </com.zhy.view.CircleMenuLayout>
 
 </LinearLayout>
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -406,14 +320,7 @@ ok，不知道大家有没有注意到，我们的布局中间的view设置的id
     <item name="id_circle_menu_item_center" type="id"/>
 
 </resources>
-1
-2
-3
-4
-5
-6
-7
-8
+
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
  
@@ -521,81 +428,7 @@ Java
 			addView(view);
 		}
 	}
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
+
 /**
 	 * 设置菜单条目的图标和文本
 	 * 
@@ -700,30 +533,7 @@ Java
         android:textSize="14.0dip" />
 
 </LinearLayout>
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
+
 <?xml version="1.0" encoding="UTF-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
